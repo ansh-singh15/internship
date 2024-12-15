@@ -11,6 +11,13 @@ interface ShippingDetails {
   phone: string;
 }
 
+/**
+ * Checkout component for handling the checkout process in an e-commerce application.
+ * Manages a two-step process: shipping details input and payment processing.
+ * Uses React hooks for state management and navigation.
+ * @returns {JSX.Element} A JSX element representing the checkout interface with
+ *                        shipping form or payment form based on the current step.
+ */
 const Checkout = () => {
   const [step, setStep] = useState(1);
   const [shippingDetails, setShippingDetails] = useState<ShippingDetails>({
