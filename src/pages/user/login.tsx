@@ -3,6 +3,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { Mail, Lock } from 'lucide-react';
 
+/**
+ * Renders a login form component with email and password inputs.
+ * Handles form submission, authentication, and navigation upon successful login.
+ * @returns {JSX.Element} The rendered login form component
+ */
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
