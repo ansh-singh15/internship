@@ -39,6 +39,10 @@ const features = [
   }
 ];
 
+/**
+ * Renders the homepage of the e-commerce website
+ * @returns {JSX.Element} The rendered homepage component
+ */
 const Homepage = () => {
   return (
     <div className="min-h-screen">
