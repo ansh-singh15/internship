@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import toast from 'react-hot-toast';
 
+/**
+ * Contact component for displaying contact information and a contact form
+ * @returns {JSX.Element} A React component containing contact details and a form
+ */
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
