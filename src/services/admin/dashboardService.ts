@@ -9,6 +9,11 @@ export const dashboardService = {
     return response.data;
   },
 
+  /**
+   * Retrieves revenue data based on the specified period.
+   * @param {string} period - The time period for revenue data ('daily', 'weekly', or 'monthly').
+   * @returns {Promise<Object>} A promise that resolves to the revenue data.
+   */
   getRevenueData: async (period: 'daily' | 'weekly' | 'monthly') => {
     const response = await axios.get(`${API_URL}/revenue?period=${period}`);
     return response.data;

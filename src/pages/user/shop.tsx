@@ -34,6 +34,10 @@ const products: Product[] = [
   // Add more products as needed
 ];
 
+/**
+ * Renders a shop component with product filtering and sorting functionality.
+ * @returns {JSX.Element} A React component that displays a filterable and sortable product grid.
+ */
 const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [priceRange, setPriceRange] = useState('all');

@@ -28,6 +28,12 @@ const occasions = [
   }
 ];
 
+/**
+ * Renders the Occasions component, which displays a shop-by-occasion section with occasion cards,
+ * featured products, and styling tips.
+ * @returns {JSX.Element} A React component containing a grid of occasion cards, a featured
+ * products section, and a styling tips section.
+ */
 const Occasions = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -3,6 +3,10 @@ import { useParams } from 'react-router-dom';
 import { Star, Truck, Shield, ArrowRight } from 'lucide-react';
 import toast from 'react-hot-toast';
 
+/**
+ * Renders a product details page for an e-commerce website
+ * @returns {JSX.Element} A React component displaying detailed information about a product
+ */
 const ProductDetails = () => {
   const { id } = useParams();
   const [selectedSize, setSelectedSize] = useState('');
