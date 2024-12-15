@@ -3,6 +3,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { User, Mail, Lock } from 'lucide-react';
 
+/**
+ * Renders a signup form component for user account creation.
+ * @returns {JSX.Element} A React component containing a form for user registration.
+ */
 const Signup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
