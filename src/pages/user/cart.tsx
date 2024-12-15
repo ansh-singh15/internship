@@ -4,6 +4,31 @@ import CartItems from '../../components/user/cart/CartItems';
 import RecentlyViewed from '../../components/user/cart/RecentlyViewed';
 import { useCart } from '../../context/CartContext';
 
+/**
+ * Renders the shopping cart component
+ * @returns {JSX.Element} The rendered cart UI
+ *
+ * This function renders the shopping cart page. It displays either an empty cart message
+ * or the cart contents based on the number of items in the cart. The component uses the
+ * useCart hook to access the cart state (total price and item count).
+ *
+ * If the cart is empty:
+ * - Displays a message indicating the cart is empty
+ * - Shows a "Continue Shopping" button that links to the shop page
+ *
+ * If the cart has items:
+ * - Shows the total number of items in the cart
+ * - Renders the CartItems component (not implemented in this snippet)
+ * - Displays an order summary including:
+ *   - Subtotal
+ *   - Shipping cost (free)
+ *   - Tax (calculated as 18% GST)
+ *   - Total price
+ * - Provides a "Proceed to Checkout" button
+ * - Renders a RecentlyViewed component (not implemented in this snippet)
+ *
+ * The component uses Tailwind CSS classes for styling and responsive design.
+ */
 const Cart = () => {
   const { total, itemCount } = useCart();
   const tax = total * 0.18; // 18% GST
